@@ -1,8 +1,9 @@
 FROM quay.io/keycloak/keycloak:26.4.6
 
-# Expose the port
+# Expose port
 EXPOSE 8080
 
-# Start Keycloak in dev mode (HTTP)
-ENTRYPOINT ["kc", "start-dev", "--http-port=8080"]
+# Use start-dev via the official image entrypoint
+ENTRYPOINT ["start-dev", "--http-port=8080"]
+
 
