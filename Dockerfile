@@ -4,9 +4,9 @@ EXPOSE 8080
 
 ENTRYPOINT /opt/keycloak/bin/kc.sh start \
   --http-enabled=true \
-  --http-port=$PORT \
+  --http-port=8080 \
   --hostname-strict=false \
-  --proxy=edge \
+  --proxy-headers=xforwarded \
   --optimized
 
 
