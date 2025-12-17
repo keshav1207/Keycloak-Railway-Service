@@ -6,7 +6,5 @@ ENTRYPOINT /opt/keycloak/bin/kc.sh start \
   --http-enabled=true \
   --http-port=8080 \
   --hostname-strict=false \
-  --proxy-headers=xforwarded \
-  --optimized
-
+  --proxy-headers=xforwarded
 
